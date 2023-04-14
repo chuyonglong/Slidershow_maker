@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+            android:id="@+id/delete"
+            android:title="@string/delete"/>
+
+    <item
+        android:id="@+id/edit"
+        android:title="@string/edit_video"/>
+
+    <item
+        android:id="@+id/trim"
+        android:title="@string/trim_video"/>
+    <item
+        android:id="@+id/share"
+        android:title="@string/share"/>
+
+</menu>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="4dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/mediaThumb"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="9dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <com.acatapps.videomaker.custom_view.RippleImageView
+        android:id="@+id/iconDelete"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:cornerRadiusImageView="9dp"
+        app:rippleColor="@color/blackAlpha20"
+        android:src="@drawable/ic_delete_selected_vector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

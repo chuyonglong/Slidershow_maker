@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Við erum að vinna hörðum höndum að því að bjóða þér besta ókeypis forrit. 5 stjörnu metið þitt er meira en peninga virði.</string>
+  <string name="msg_rate">Vinsamlegast notaðu smá stund til að skrifa fallega umsögn á Google Play til að hvetja okkur</string>
+  <string name="text_rate">Gefðu okkur 5 stjörnur!</string>
+  <string name="text_later">Seinna</string>
+  <string name="text_no_rate">Nei takk</string>
+  <string name="title_header_rate">Gefðu okkur einkunn</string>
+</resources>

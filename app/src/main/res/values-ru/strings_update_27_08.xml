@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Мы прилагаем все усилия, чтобы предоставить вам лучшее бесплатное приложение. Ваш 5-звездочный рейтинг дороже денег.</string>
+  <string name="msg_rate">Пожалуйста, найдите время, чтобы написать хороший отзыв в Google Play, чтобы вдохновить нас</string>
+  <string name="text_rate">Оцените нас 5 звезд!</string>
+  <string name="text_later">Потом</string>
+  <string name="text_no_rate">Нет, спасибо</string>
+  <string name="title_header_rate">Оцените нас</string>
+</resources>

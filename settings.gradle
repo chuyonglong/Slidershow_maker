@@ -1,0 +1,2 @@
+include ':app', ':mobile-ffmpeg1125', ':gpuv2'
+rootProject.name='Slidershow_maker'

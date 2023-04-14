@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Kami bekerja keras untuk memberi Anda aplikasi gratis terbaik. Peringkat 5 bintang Anda lebih berharga daripada uang.</string>
+  <string name="msg_rate">Mohon luangkan waktu sejenak untuk menulis review bagus di Google Play untuk mendorong kami</string>
+  <string name="text_rate">Nilai kami 5 bintang!</string>
+  <string name="text_later">Kemudian</string>
+  <string name="text_no_rate">Tidak, terima kasih</string>
+  <string name="title_header_rate">Nilai kami</string>
+</resources>

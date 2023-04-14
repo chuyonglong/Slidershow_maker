@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="ltr">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icTextAlignCenter"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_text_align_center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+<!--    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="12sp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@id/icTextAlignCenter"
+        app:layout_constraintStart_toStartOf="@id/icTextAlignCenter"
+        app:layout_constraintEnd_toEndOf="@id/icTextAlignCenter"/>-->
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icTextAlignLeft"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_text_align_left"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintTop_toTopOf="@id/icTextAlignCenter"
+        app:layout_constraintBottom_toBottomOf="@id/icTextAlignCenter"
+        app:layout_constraintEnd_toStartOf="@id/icTextAlignCenter" />
+
+
+<!--    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/left"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="12sp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@id/icTextAlignLeft"
+        app:layout_constraintStart_toStartOf="@id/icTextAlignLeft"
+        app:layout_constraintEnd_toEndOf="@id/icTextAlignLeft"/>-->
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icTextAlignRight"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_text_align_right"
+        android:layout_marginStart="42dp"
+        app:layout_constraintStart_toEndOf="@id/icTextAlignCenter"
+        app:layout_constraintTop_toTopOf="@id/icTextAlignCenter"
+        app:layout_constraintBottom_toBottomOf="@id/icTextAlignCenter"/>
+
+<!--    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/right"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="12sp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@id/icTextAlignRight"
+        app:layout_constraintStart_toStartOf="@id/icTextAlignRight"
+        app:layout_constraintEnd_toEndOf="@id/icTextAlignRight"/>-->
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/textStyleRegular"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_text_style_regular"
+        app:layout_constraintTop_toTopOf="@id/textStyleItalic"
+        app:layout_constraintBottom_toBottomOf="@id/textStyleItalic"
+        app:layout_constraintEnd_toStartOf="@id/textStyleBold"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/textStyleBold"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_text_style_bold"
+        app:layout_constraintTop_toTopOf="@id/textStyleItalic"
+        app:layout_constraintBottom_toBottomOf="@id/textStyleItalic"
+        app:layout_constraintEnd_toStartOf="@id/textStyleItalic"
+        app:layout_constraintStart_toEndOf="@id/textStyleRegular"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/textStyleItalic"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_text_style_italic"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toEndOf="@id/textStyleBold"
+        app:layout_constraintTop_toBottomOf="@id/icTextAlignCenter"
+        app:layout_constraintEnd_toStartOf="@id/textStyleBoldItalic"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/textStyleBoldItalic"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_text_style_bold_italic"
+        app:layout_constraintTop_toTopOf="@id/textStyleItalic"
+        app:layout_constraintBottom_toBottomOf="@id/textStyleItalic"
+        app:layout_constraintStart_toEndOf="@id/textStyleItalic"
+        app:layout_constraintEnd_toStartOf="@id/textStyleStrike"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/textStyleStrike"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_text_style_strike"
+        app:layout_constraintEnd_toStartOf="@id/textStyleUnderline"
+        app:layout_constraintTop_toTopOf="@id/textStyleItalic"
+        app:layout_constraintBottom_toBottomOf="@id/textStyleItalic"
+        app:layout_constraintStart_toEndOf="@id/textStyleBoldItalic"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/textStyleUnderline"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_text_style_underline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textStyleItalic"
+        app:layout_constraintBottom_toBottomOf="@id/textStyleItalic"
+        app:layout_constraintStart_toEndOf="@id/textStyleStrike"/>
+
+
+<!--    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/regular"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/textStyleRegular"
+        app:layout_constraintStart_toStartOf="@id/textStyleRegular"
+        app:layout_constraintEnd_toEndOf="@id/textStyleRegular"/>-->
+
+<!--    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bold"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/textStyleBold"
+        app:layout_constraintStart_toStartOf="@id/textStyleBold"
+        app:layout_constraintEnd_toEndOf="@id/textStyleBold"/>-->
+
+<!--    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/italic"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/textStyleItalic"
+        app:layout_constraintStart_toStartOf="@id/textStyleItalic"
+        app:layout_constraintEnd_toEndOf="@id/textStyleItalic"/>-->
+
+<!--    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bold_italic"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/textStyleBoldItalic"
+        app:layout_constraintStart_toStartOf="@id/textStyleBoldItalic"
+        app:layout_constraintEnd_toEndOf="@id/textStyleBoldItalic"/>-->
+
+<!--    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/strike"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/textStyleStrike"
+        app:layout_constraintStart_toStartOf="@id/textStyleStrike"
+        app:layout_constraintEnd_toEndOf="@id/textStyleStrike"/>-->
+
+<!--    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/underline"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/textStyleUnderline"
+        app:layout_constraintStart_toStartOf="@id/textStyleUnderline"
+        app:layout_constraintEnd_toEndOf="@id/textStyleUnderline"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

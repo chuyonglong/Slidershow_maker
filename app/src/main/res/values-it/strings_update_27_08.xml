@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Stiamo lavorando duramente per fornirti la migliore app gratuita. La tua valutazione a 5 stelle vale più dei soldi.</string>
+  <string name="msg_rate">Per favore, dedica un momento a scrivere una bella recensione su Google Play per incoraggiarci</string>
+  <string name="text_rate">Valutaci 5 stelle!</string>
+  <string name="text_later">Dopo</string>
+  <string name="text_no_rate">No grazie</string>
+  <string name="title_header_rate">Valutaci</string>
+</resources>

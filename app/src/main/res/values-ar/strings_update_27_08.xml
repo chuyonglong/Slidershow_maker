@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">نحن نعمل بجد لنوفر لك أفضل تطبيق مجاني. تقييمك بخمس نجوم يستحق أكثر من المال.</string>
+  <string name="msg_rate">يرجى قضاء بعض الوقت لكتابة مراجعة لطيفة على Google Play لتشجيعنا</string>
+  <string name="text_rate">قيمنا 5 نجوم!</string>
+  <string name="text_later">في وقت لاحق</string>
+  <string name="text_no_rate">لا شكرا</string>
+  <string name="title_header_rate">قيمنا</string>
+</resources>

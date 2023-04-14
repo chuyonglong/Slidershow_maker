@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">เรากำลังทำงานอย่างเต็มที่เพื่อจัดหาแอปฟรีที่ดีที่สุดให้กับคุณ การให้คะแนนระดับ 5 ดาวของคุณมีค่ามากกว่าเงิน</string>
+  <string name="msg_rate">โปรดใช้เวลาสักครู่เพื่อเขียนบทวิจารณ์ที่ดีบน Google Play เพื่อเป็นกำลังใจให้เรา</string>
+  <string name="text_rate">ให้คะแนนเรา 5 ดาว!</string>
+  <string name="text_later">ต่อมา</string>
+  <string name="text_no_rate">ไม่เป็นไรขอบคุณ</string>
+  <string name="title_header_rate">ให้คะแนนเรา</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Aħna qegħdin naħdmu ħafna biex nipprovdulek l-aħjar app b\'xejn. Il-klassifikazzjoni ta \'5 stilel tiegħek tiswa aktar minn flus.</string>
+  <string name="msg_rate">Jekk jogħġbok ħu mument biex tikteb reviżjoni sabiħa fuq Google Play biex tħeġġiġna</string>
+  <string name="text_rate">Rata us 5 stilel!</string>
+  <string name="text_later">Aktar tard</string>
+  <string name="text_no_rate">Le grazzi</string>
+  <string name="title_header_rate">Rata us</string>
+</resources>

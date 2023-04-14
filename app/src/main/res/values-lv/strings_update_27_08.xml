@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Mēs smagi strādājam, lai nodrošinātu jums vislabāko bezmaksas lietotni. Jūsu piecu zvaigžņu vērtējums ir vairāk vērts nekā nauda.</string>
+  <string name="msg_rate">Lūdzu, veltiet laiku, lai uzrakstītu jauku pārskatu pakalpojumā Google Play, lai mudinātu mūs</string>
+  <string name="text_rate">Novērtējiet mūs 5 zvaigznes!</string>
+  <string name="text_later">Vēlāk</string>
+  <string name="text_no_rate">Nē paldies</string>
+  <string name="title_header_rate">Novērtē mūs</string>
+</resources>

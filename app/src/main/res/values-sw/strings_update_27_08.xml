@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Tunajitahidi kukupa programu bora ya bure. Ukadiriaji wako wa nyota 5 unastahili zaidi kuliko pesa.</string>
+  <string name="msg_rate">Tafadhali chukua muda kuandika ukaguzi mzuri kwenye Google Play ili kututia moyo</string>
+  <string name="text_rate">Kadiria nyota 5!</string>
+  <string name="text_later">Baadae</string>
+  <string name="text_no_rate">Hapana, asante</string>
+  <string name="title_header_rate">Kiwango chetu</string>
+</resources>

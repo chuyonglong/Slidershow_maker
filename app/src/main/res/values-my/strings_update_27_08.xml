@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">အကောင်းဆုံးအခမဲ့အက်ပလီကေးရှင်းကိုသင့်အားပေးအပ်ရန်ကျွန်ုပ်တို့ကြိုးစားနေသည်။ သင်၏ကြယ်ငါးပွင့်အဆင့်သတ်မှတ်ချက်သည်ငွေထက် ပို၍ တန်ဖိုးရှိသည်။</string>
+  <string name="msg_rate">ကျွန်တော်တို့ကိုအားပေးဖို့ဂူဂယ်လ်ပလေးပေါ်မှာကောင်းတဲ့ပြန်လည်သုံးသပ်မှုတစ်ခုကိုခဏလောက်ပေးပါ</string>
+  <string name="text_rate">ကြယ်ငါးပွင့်အဆင့်သတ်မှတ်ပါ။</string>
+  <string name="text_later">နောက်ပိုင်း</string>
+  <string name="text_no_rate">ရပါတယ်ကျေးဇူးပါ</string>
+  <string name="title_header_rate">အဆင့်သတ်မှတ်ပေးပါ</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Мы прыкладаем усе намаганні, каб даць вам лепшае бясплатнае прыкладанне. Ваш 5-зоркавы рэйтынг варта больш грошай.</string>
+  <string name="msg_rate">Калі ласка, спяшайцеся, каб напісаць добры водгук у Google Play, каб падбадзёрыць нас</string>
+  <string name="text_rate">Ацаніце нас 5 зорак!</string>
+  <string name="text_later">Пазней</string>
+  <string name="text_no_rate">Не, дзякуй</string>
+  <string name="title_header_rate">Ацаніце нас</string>
+</resources>

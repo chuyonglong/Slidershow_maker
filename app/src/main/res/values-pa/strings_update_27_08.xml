@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">ਅਸੀਂ ਤੁਹਾਨੂੰ ਇੱਕ ਵਧੀਆ ਮੁਫਤ ਐਪ ਪ੍ਰਦਾਨ ਕਰਨ ਲਈ ਸਖਤ ਮਿਹਨਤ ਕਰ ਰਹੇ ਹਾਂ. ਤੁਹਾਡੀ 5-ਸਿਤਾਰਾ ਰੇਟਿੰਗ ਪੈਸੇ ਨਾਲੋਂ ਵਧੇਰੇ ਕੀਮਤ ਵਾਲੀ ਹੈ.</string>
+  <string name="msg_rate">ਕਿਰਪਾ ਕਰਕੇ ਸਾਨੂੰ ਉਤਸ਼ਾਹਤ ਕਰਨ ਲਈ ਗੂਗਲ ਪਲੇ \'ਤੇ ਇਕ ਵਧੀਆ ਸਮੀਖਿਆ ਲਿਖਣ ਲਈ ਕੁਝ ਸਮਾਂ ਲਓ</string>
+  <string name="text_rate">ਸਾਨੂੰ 5 ਸਿਤਾਰੇ ਦੀ ਦਰਜਾ ਦਿਓ!</string>
+  <string name="text_later">ਬਾਅਦ ਵਿਚ</string>
+  <string name="text_no_rate">ਨਹੀਂ ਧੰਨਵਾਦ</string>
+  <string name="title_header_rate">ਸਾਨੂੰ ਦਰਜਾ ਦਿਓ</string>
+</resources>

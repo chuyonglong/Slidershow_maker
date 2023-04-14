@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:textAlignment="viewStart">
+
+    <View
+        android:id="@+id/blackViewInDownloadThemeDialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blackAlpha45"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/downloadThemeDialogContent"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_corner_5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layoutDirection="ltr"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/downloadThemeLabel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_download_label_in_dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/download_theme"
+            android:textColor="#374957"
+            android:textSize="@dimen/normalTextSize"
+            app:layout_constraintBottom_toBottomOf="@id/downloadThemeLabel"
+            app:layout_constraintStart_toStartOf="@id/downloadThemeLabel"
+            app:layout_constraintTop_toTopOf="@id/downloadThemeLabel" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icClose"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_close_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/themeIconInDownloadDialog"
+            android:layout_width="64dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/downloadThemeLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/themeNameLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_vertical"
+            android:textColor="#F4511E"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/themeIconInDownloadDialog"
+            app:layout_constraintTop_toTopOf="@id/themeIconInDownloadDialog" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/watchVideoButton"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_watch_video_to_download_theme"
+            android:drawableStart="@drawable/ic_video"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:text="@string/watch_video_to_download_theme"
+            android:textColor="@color/white"
+            android:textSize="@dimen/smallTextSize"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/themeIconInDownloadDialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/themeNameLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/doneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/bg_watch_video_to_download_theme"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:text="@string/done"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/themeIconInDownloadDialog"
+            app:layout_constraintStart_toEndOf="@+id/themeIconInDownloadDialog" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tryAgainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/bg_resume_download_theme"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:text="@string/try_again"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/themeIconInDownloadDialog"
+            app:layout_constraintStart_toEndOf="@+id/themeIconInDownloadDialog" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/downloadingViewContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/themeIconInDownloadDialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/themeIconInDownloadDialog"
+            app:layout_constraintTop_toBottomOf="@id/themeNameLabel">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/downloading"
+                android:textColor="#374957"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@id/downloadingProgressBar"
+                app:layout_constraintTop_toTopOf="@id/downloadingProgressBar" />
+
+            <com.acatapps.videomaker.custom_view.DownloadingProgressBar
+                android:id="@+id/downloadingProgressBar"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

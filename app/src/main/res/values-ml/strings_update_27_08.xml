@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">നിങ്ങൾക്ക് ഒരു മികച്ച സ app ജന്യ അപ്ലിക്കേഷൻ നൽകാൻ ഞങ്ങൾ കഠിനമായി പരിശ്രമിക്കുന്നു. നിങ്ങളുടെ 5-സ്റ്റാർ റേറ്റിംഗ് പണത്തേക്കാൾ വിലമതിക്കുന്നു.</string>
+  <string name="msg_rate">ഞങ്ങളെ പ്രോത്സാഹിപ്പിക്കുന്നതിന് Google Play- യിൽ ഒരു നല്ല അവലോകനം എഴുതാൻ അൽപ്പസമയം ചെലവഴിക്കുക</string>
+  <string name="text_rate">ഞങ്ങൾക്ക് 5 നക്ഷത്രങ്ങൾ റേറ്റുചെയ്യുക!</string>
+  <string name="text_later">പിന്നീട്</string>
+  <string name="text_no_rate">വേണ്ട, നന്ദി</string>
+  <string name="title_header_rate">ഞങ്ങളെ റേറ്റുചെയ്യുക</string>
+</resources>

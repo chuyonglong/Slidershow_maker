@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">私たちはあなたに最高の無料アプリを提供するために努力しています。 5つ星の評価はお金以上の価値があります。</string>
+  <string name="msg_rate">Google Playで素敵なレビューを書いて、私たちを励ましてください。</string>
+  <string name="text_rate">5つ星を評価してください！</string>
+  <string name="text_later">後</string>
+  <string name="text_no_rate">結構です</string>
+  <string name="title_header_rate">私たちを評価してください</string>
+</resources>

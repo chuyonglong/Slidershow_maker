@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">최고의 무료 앱을 제공하기 위해 열심히 노력하고 있습니다. 귀하의 별 5 개 등급은 돈보다 더 가치가 있습니다.</string>
+  <string name="msg_rate">잠시 시간을내어 Google Play에 좋은 리뷰를 작성하여 격려해주세요.</string>
+  <string name="text_rate">우리에게 별 5 개를 평가하십시오!</string>
+  <string name="text_later">나중</string>
+  <string name="text_no_rate">고맙지 만 사양 할게</string>
+  <string name="title_header_rate">우리를 평가</string>
+</resources>

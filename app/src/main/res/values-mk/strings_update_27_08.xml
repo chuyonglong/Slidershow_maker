@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Ние работиме напорно за да ви обезбедиме најдобра бесплатна апликација. Вашиот рејтинг со 5 везди вреди повеќе од пари.</string>
+  <string name="msg_rate">Ве молиме, земете еден момент да напишете убав преглед на Google Play за да нè охрабрите</string>
+  <string name="text_rate">Оценете ни 5 starsвезди!</string>
+  <string name="text_later">Подоцна</string>
+  <string name="text_no_rate">Не, благодарам</string>
+  <string name="title_header_rate">Оценете нè</string>
+</resources>

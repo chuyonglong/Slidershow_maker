@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Táimid ag obair go crua chun an aip saor in aisce is fearr a sholáthar duit. Is fiú níos mó ná airgead do rátáil 5 réalta.</string>
+  <string name="msg_rate">Tóg nóiméad le do thoil chun léirmheas deas a scríobh ar Google Play chun muid a spreagadh</string>
+  <string name="text_rate">Ráta dúinn 5 réalta!</string>
+  <string name="text_later">Níos déanaí</string>
+  <string name="text_no_rate">Níl sé uaim go raibh maith agat</string>
+  <string name="title_header_rate">Ráta dúinn</string>
+</resources>

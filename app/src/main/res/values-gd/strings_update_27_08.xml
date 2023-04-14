@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Tha sinn ag obair gu cruaidh gus an aplacaid as fheàrr an-asgaidh a thoirt dhut. Is fhiach an rangachadh 5 rionnag agad barrachd air airgead.</string>
+  <string name="msg_rate">Feuch an gabh thu mionaid airson lèirmheas snog a sgrìobhadh air Google Play gus ar brosnachadh</string>
+  <string name="text_rate">Dèan rangachadh dhuinn 5 rionnagan!</string>
+  <string name="text_later">Nas fhaide air adhart</string>
+  <string name="text_no_rate">Chan eil taing</string>
+  <string name="title_header_rate">Dèan measadh oirnn</string>
+</resources>

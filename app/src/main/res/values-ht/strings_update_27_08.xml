@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Nou ap travay di pou ba ou yon pi bon app gratis. Rating 5-zetwal ou a vo pi plis pase lajan.</string>
+  <string name="msg_rate">Tanpri pran yon moman yo ekri yon revizyon bèl sou Google Jwe ankouraje nou</string>
+  <string name="text_rate">Evalye nou 5 zetwal!</string>
+  <string name="text_later">Pita</string>
+  <string name="text_no_rate">Non mèsi</string>
+  <string name="title_header_rate">Evalye nou</string>
+</resources>

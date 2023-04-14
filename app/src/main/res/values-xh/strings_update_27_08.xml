@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Sisebenza nzima ukukunikezela ngeyona app yasimahla. Ulinganiso lwakho lweenkwenkwezi ezi-5 luxabiseke ngaphezulu kwemali.</string>
+  <string name="msg_rate">Nceda uthathe umzuzwana ukubhala uphononongo oluhle kuGoogle Play ukusikhuthaza</string>
+  <string name="text_rate">Sitsalele iinkwenkwezi ezi-5!</string>
+  <string name="text_later">Emva kwexesha</string>
+  <string name="text_no_rate">Hayi enkosi</string>
+  <string name="title_header_rate">Silinganise</string>
+</resources>

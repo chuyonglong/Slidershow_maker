@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Töötame kõvasti selle nimel, et pakkuda teile parimat tasuta rakendust. Teie 5-tärnine hinnang on väärt rohkem kui raha.</string>
+  <string name="msg_rate">Võtke meiega julgustuseks hetk aega, et kirjutada Google Plays tore ülevaade</string>
+  <string name="text_rate">Hinda meid 5 tärniga!</string>
+  <string name="text_later">Hiljem</string>
+  <string name="text_no_rate">Ei aitäh</string>
+  <string name="title_header_rate">Hinda meid</string>
+</resources>

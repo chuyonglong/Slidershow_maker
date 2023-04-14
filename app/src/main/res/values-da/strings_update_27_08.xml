@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Vi arbejder hårdt for at give dig en bedste gratis app. Din 5-stjernet vurdering er mere værd end penge.</string>
+  <string name="msg_rate">Brug et øjeblik til at skrive en dejlig anmeldelse på Google Play for at opmuntre os</string>
+  <string name="text_rate">Bedøm os 5 stjerner!</string>
+  <string name="text_later">Senere</string>
+  <string name="text_no_rate">Nej tak</string>
+  <string name="title_header_rate">Bedøm os</string>
+</resources>

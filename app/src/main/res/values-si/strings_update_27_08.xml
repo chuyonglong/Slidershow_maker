@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">ඔබට හොඳම නොමිලේ යෙදුමක් ලබා දීමට අපි මහන්සි වෙමු. ඔබගේ තරු 5 ශ්‍රේණිගත කිරීම මුදලට වඩා වටිනවා.</string>
+  <string name="msg_rate">අපව ධෛර්යමත් කිරීම සඳහා කරුණාකර ගූගල් ප්ලේ හි හොඳ සමාලෝචනයක් ලිවීමට මොහොතක් ගත කරන්න</string>
+  <string name="text_rate">අපට තරු 5 ක් ශ්‍රේණිගත කරන්න!</string>
+  <string name="text_later">පසු</string>
+  <string name="text_no_rate">නැ ස්තුතියි</string>
+  <string name="title_header_rate">අපිව අගය කරන්න</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Kei te kaha matou ki te mahi me te whakarato i a koe me te tino taupānga koreutu. Ko to tatauranga 5-whetu he nui atu i te putea moni.</string>
+  <string name="msg_rate">Tena koa taia ki te tuhi i tetahi arotake pai i runga i te Google Play kia whakatenatena matou</string>
+  <string name="text_rate">Whakatauria matou 5 whetu!</string>
+  <string name="text_later">Muri iho</string>
+  <string name="text_no_rate">Kāo, ka mihi</string>
+  <string name="title_header_rate">Aitiria mai</string>
+</resources>

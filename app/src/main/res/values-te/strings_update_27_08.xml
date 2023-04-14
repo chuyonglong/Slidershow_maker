@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">మీకు ఉత్తమమైన ఉచిత అనువర్తనాన్ని అందించడానికి మేము తీవ్రంగా కృషి చేస్తున్నాము. మీ 5-స్టార్ రేటింగ్ డబ్బు కంటే ఎక్కువ విలువైనది.</string>
+  <string name="msg_rate">మమ్మల్ని ప్రోత్సహించడానికి దయచేసి Google Play లో మంచి సమీక్ష రాయడానికి కొంత సమయం కేటాయించండి</string>
+  <string name="text_rate">మాకు 5 నక్షత్రాలను రేట్ చేయండి!</string>
+  <string name="text_later">తర్వాత</string>
+  <string name="text_no_rate">లేదు, ధన్యవాదాలు</string>
+  <string name="title_header_rate">మాకు రేట్ చేయండి</string>
+</resources>

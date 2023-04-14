@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">מיר אַרבעט שווער צו צושטעלן איר אַ בעסטער פריי אַפּ. דיין 5-שטערן שאַץ איז ווערט מער ווי געלט.</string>
+  <string name="msg_rate">ביטע נעמען אַ מאָמענט צו שרייַבן אַ אָנגענעם רעצענזיע אויף Google Play צו מוטיקן אונדז</string>
+  <string name="text_rate">רייטינג אונדז 5 שטערן!</string>
+  <string name="text_later">שפעטער</string>
+  <string name="text_no_rate">ניין א דאנק</string>
+  <string name="title_header_rate">רייטינג אונדז</string>
+</resources>

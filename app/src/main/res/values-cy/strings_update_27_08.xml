@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Rydym yn gweithio\'n galed i ddarparu ap rhad ac am ddim gorau i chi. Mae eich sgôr 5 seren yn werth mwy nag arian.</string>
+  <string name="msg_rate">Cymerwch eiliad i ysgrifennu adolygiad braf ar Google Play i\'n hannog</string>
+  <string name="text_rate">Graddiwch ni 5 seren!</string>
+  <string name="text_later">Yn ddiweddarach</string>
+  <string name="text_no_rate">Dim Diolch</string>
+  <string name="title_header_rate">Rhowch sgôr i ni</string>
+</resources>

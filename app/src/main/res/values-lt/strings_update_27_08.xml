@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Stengiamės pateikti jums geriausią nemokamą programą. Jūsų 5 žvaigždučių įvertinimas yra vertas daugiau nei pinigai.</string>
+  <string name="msg_rate">Skirkite šiek tiek laiko parašyti gražų atsiliepimą „Google Play“, kad paskatintumėte mus</string>
+  <string name="text_rate">Įvertink mus 5 žvaigždutes!</string>
+  <string name="text_later">Vėliau</string>
+  <string name="text_no_rate">Ne, ačiū</string>
+  <string name="title_header_rate">Įvertinkite mus</string>
+</resources>

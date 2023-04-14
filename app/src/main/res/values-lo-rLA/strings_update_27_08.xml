@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">ພວກເຮົາ ກຳ ລັງເຮັດວຽກຢ່າງ ໜັກ ເພື່ອໃຫ້ທ່ານມີແອັບ free ຟຣີທີ່ດີທີ່ສຸດ. ການໃຫ້ຄະແນນລະດັບ 5 ດາວຂອງທ່ານມີຄ່າຫລາຍກ່ວາເງິນ.</string>
+  <string name="msg_rate">ກະລຸນາໃຊ້ເວລາ ໜ້ອຍ ໜຶ່ງ ເພື່ອຂຽນ ຄຳ ຕິຊົມທີ່ດີໃນ Google Play ເພື່ອເປັນ ກຳ ລັງໃຈໃຫ້ພວກເຮົາ</string>
+  <string name="text_rate">ໃຫ້ຄະແນນພວກເຮົາ 5 ດາວ!</string>
+  <string name="text_later">ຕໍ່ມາ</string>
+  <string name="text_no_rate">ບໍ່​ຂອບ​ໃຈ</string>
+  <string name="title_header_rate">ໃຫ້ຄະແນນພວກເຮົາ</string>
+</resources>

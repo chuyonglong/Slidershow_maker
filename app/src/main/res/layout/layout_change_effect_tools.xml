@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/effectListView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/videoInChangeEffect"
+        tools:listitem="@layout/item_gs_transition_list"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icAddPhotoInChangeEffect"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_add_photo_vector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/videoInChangeEffect"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/icAddPhotoInChangeEffect"
+        app:layout_constraintBottom_toBottomOf="@id/icAddPhotoInChangeEffect"
+        app:layout_constraintTop_toTopOf="@id/icAddPhotoInChangeEffect"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:listitem="@layout/item_image_list_in_slide_show"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

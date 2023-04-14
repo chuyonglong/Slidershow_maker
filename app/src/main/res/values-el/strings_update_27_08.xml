@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Εργαζόμαστε σκληρά για να σας παρέχουμε μια καλύτερη δωρεάν εφαρμογή. Η βαθμολογία 5 αστέρων αξίζει περισσότερο από χρήματα.</string>
+  <string name="msg_rate">Αφιερώστε λίγο χρόνο για να γράψετε μια ωραία κριτική στο Google Play για να μας ενθαρρύνετε</string>
+  <string name="text_rate">Βαθμολογήστε μας 5 αστέρια!</string>
+  <string name="text_later">Αργότερα</string>
+  <string name="text_no_rate">Οχι ευχαριστώ</string>
+  <string name="title_header_rate">Βαθμολογήστε μας</string>
+</resources>

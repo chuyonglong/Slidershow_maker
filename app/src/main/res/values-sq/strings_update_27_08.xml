@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Ne jemi duke punuar shumë për t\'ju siguruar një aplikacion më të mirë falas. Vlerësimi juaj me 5 yje vlen më shumë se para.</string>
+  <string name="msg_rate">Ju lutemi merrni një moment për të shkruar një përmbledhje të këndshme në Google Play për të na inkurajuar</string>
+  <string name="text_rate">Na vlerësoni 5 yje!</string>
+  <string name="text_later">më vonë</string>
+  <string name="text_no_rate">Jo faleminderit</string>
+  <string name="title_header_rate">Na vleresoni</string>
+</resources>

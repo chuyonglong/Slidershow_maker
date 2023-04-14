@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Muncim din greu pentru a vă oferi cea mai bună aplicație gratuită. Evaluarea dvs. de 5 stele valorează mai mult decât bani.</string>
+  <string name="msg_rate">Vă rugăm să luați un moment pentru a scrie o recenzie frumoasă pe Google Play pentru a ne încuraja</string>
+  <string name="text_rate">Evaluează-ne 5 stele!</string>
+  <string name="text_later">Mai tarziu</string>
+  <string name="text_no_rate">Nu multumesc</string>
+  <string name="title_header_rate">Ne evalua</string>
+</resources>

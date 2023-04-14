@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">እኛ ምርጥ ነፃ መተግበሪያ ለእርስዎ ለማቅረብ ጠንክረን እየሰራን ነው። ባለ 5 ኮከብ ደረጃዎ ከገንዘብ የበለጠ ነው ፡፡</string>
+  <string name="msg_rate">እኛን ለማበረታታት በ Google Play ላይ ጥሩ ግምገማ ለመፃፍ ትንሽ ጊዜ ይውሰዱ</string>
+  <string name="text_rate">5 ኮከቦችን ይስጡን!</string>
+  <string name="text_later">በኋላ</string>
+  <string name="text_no_rate">አይ አመሰግናለሁ</string>
+  <string name="title_header_rate">ደረጃ ስጠን</string>
+</resources>

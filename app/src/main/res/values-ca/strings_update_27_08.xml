@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Estem treballant per oferir-vos una millor aplicació gratuïta. La qualificació de 5 estrelles val més que diners.</string>
+  <string name="msg_rate">Aprofiteu un moment per escriure un bon comentari a Google Play per animar-nos</string>
+  <string name="text_rate">Valoreu-nos 5 estrelles!</string>
+  <string name="text_later">Més endavant</string>
+  <string name="text_no_rate">No gràcies</string>
+  <string name="title_header_rate">Puntua\'ns</string>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/bgBlackOnYesNo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blackAlpha45"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <LinearLayout
+        android:id="@+id/dialogContentOnYesNo"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:background="@drawable/bg_corner_5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:focusable="true">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_margin="24dp"
+            android:textSize="18dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:gravity="center"
+            android:padding="12dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/noButton"
+                style="@style/Button_In_Dialog"
+                android:layout_width="0dp"
+                android:ellipsize="end"
+                android:text="@string/cancel"
+                android:background="@drawable/bg_cancel_button"
+                android:layout_weight="1"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="16dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/yesButton"
+                style="@style/Button_In_Dialog"
+                android:layout_width="0dp"
+                android:text="@string/yes"
+                android:textColor="@color/grayA01"
+                android:background="@drawable/bg_ok_button"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="24dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

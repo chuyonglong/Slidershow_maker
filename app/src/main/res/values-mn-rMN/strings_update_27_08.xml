@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Бид танд хамгийн сайн үнэгүй апп өгөхийн тулд шаргуу ажиллаж байна. Таны 5 одтой үнэлгээ нь мөнгөнөөс илүү үнэтэй юм.</string>
+  <string name="msg_rate">Google Play дээр сэтгэгдэл үлдээж, биднийг урамшуулахаар цаг гаргана уу</string>
+  <string name="text_rate">Биднийг 5 одоор үнэлнэ үү.</string>
+  <string name="text_later">Дараа нь</string>
+  <string name="text_no_rate">Үгүй ээ баярлалаа</string>
+  <string name="title_header_rate">Биднийг дүгнэнэ үү</string>
+</resources>

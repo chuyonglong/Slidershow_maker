@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Mir schaffen schwéier fir Iech eng bescht gratis App ze bidden. Äre 5-Stärebewäertung ass méi wéi wäert.</string>
+  <string name="msg_rate">Huelt Iech Zäit fir e flotte Review op Google Play ze schreiwen fir eis ze encouragéieren</string>
+  <string name="text_rate">Bewäert eis 5 Stären!</string>
+  <string name="text_later">Méi spéit</string>
+  <string name="text_no_rate">Nee Merci</string>
+  <string name="title_header_rate">Bewäert eis</string>
+</resources>

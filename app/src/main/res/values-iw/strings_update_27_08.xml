@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">אנו עובדים קשה כדי לספק לך אפליקציה בחינם הטובה ביותר. דירוג 5 כוכבים שלך שווה יותר מכסף.</string>
+  <string name="msg_rate">אנא הקדש רגע לכתוב ביקורת נחמדה ב- Google Play כדי לעודד אותנו</string>
+  <string name="text_rate">דרג אותנו 5 כוכבים!</string>
+  <string name="text_later">יותר מאוחר</string>
+  <string name="text_no_rate">לא תודה</string>
+  <string name="title_header_rate">דרג אותנו</string>
+</resources>

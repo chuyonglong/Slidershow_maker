@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Izahay dia mikely aina amin\'ny fanomezana anao maimaimpoana maimaim-poana. Ny saranao 5-star anao dia mendrika mihoatra noho ny vola.</string>
+  <string name="msg_rate">Miangavy fotoana kely hanoratana ny famerenana mahafinaritra amin\'ny Google Play hampahery anay</string>
+  <string name="text_rate">Araho izahay 5 kintana!</string>
+  <string name="text_later">Taty aoriana</string>
+  <string name="text_no_rate">Tsia fa misaotra</string>
+  <string name="title_header_rate">Manombatelo</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">உங்களுக்கு சிறந்த இலவச பயன்பாட்டை வழங்க நாங்கள் கடுமையாக உழைக்கிறோம். உங்கள் 5-நட்சத்திர மதிப்பீடு பணத்தை விட மதிப்பு வாய்ந்தது.</string>
+  <string name="msg_rate">எங்களை ஊக்குவிக்க Google Play இல் ஒரு நல்ல மதிப்புரையை எழுத சிறிது நேரம் ஒதுக்குங்கள்</string>
+  <string name="text_rate">எங்களுக்கு 5 நட்சத்திரங்களை மதிப்பிடுங்கள்!</string>
+  <string name="text_later">பின்னர்</string>
+  <string name="text_no_rate">இல்லை, நன்றி</string>
+  <string name="title_header_rate">எங்களை மதிப்பிடு</string>
+</resources>

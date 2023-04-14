@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Pyrimme tarjoamaan sinulle parhaan ilmaisen sovelluksen. Viiden tähden arvosana on enemmän kuin rahaa.</string>
+  <string name="msg_rate">Ole hyvä ja kirjoita hieno arvostelu Google Playsta rohkaistaksesi meitä</string>
+  <string name="text_rate">Arvioi 5 tähteä!</string>
+  <string name="text_later">Myöhemmin</string>
+  <string name="text_no_rate">Ei kiitos</string>
+  <string name="title_header_rate">Anna meille arvosana</string>
+</resources>

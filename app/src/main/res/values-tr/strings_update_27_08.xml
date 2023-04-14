@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Size en iyi ücretsiz uygulamayı sunmak için çok çalışıyoruz. 5 yıldızlı puanınız paradan daha değerlidir.</string>
+  <string name="msg_rate">Lütfen bizi teşvik etmek için Google Play\'de güzel bir yorum yazmak için bir dakikanızı ayırın</string>
+  <string name="text_rate">Bize 5 yıldız ver!</string>
+  <string name="text_later">Sonra</string>
+  <string name="text_no_rate">Hayır teşekkürler</string>
+  <string name="title_header_rate">Bizi değerlendirin</string>
+</resources>

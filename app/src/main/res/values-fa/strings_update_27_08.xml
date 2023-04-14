@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">ما در تلاش هستیم تا بهترین برنامه رایگان را برای شما فراهم کنیم. امتیاز 5 ستاره شما بیش از پول ارزش دارد.</string>
+  <string name="msg_rate">لطفاً برای تشویق ما ، لحظه ای بنویسید تا یک بررسی خوب در Google Play بنویسید</string>
+  <string name="text_rate">به ما 5 ستاره امتیاز دهید!</string>
+  <string name="text_later">بعد</string>
+  <string name="text_no_rate">نه ممنون</string>
+  <string name="title_header_rate">به ما رای دهید</string>
+</resources>

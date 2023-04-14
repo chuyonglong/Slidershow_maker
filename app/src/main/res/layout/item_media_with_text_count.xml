@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/itemRoot">
+
+    <com.acatapps.videomaker.custom_view.custom_imageshow.ImageViewWithNumberCount
+        android:clickable="false"
+        android:id="@+id/mediaThumb"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="3dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:focusable="true" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/durationLabel"
+        android:layout_width="wrap_content"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:textSize="@dimen/smallTextSize"
+        android:visibility="gone"
+        android:fontFamily="@font/roboto_regular"
+        app:layout_constraintBottom_toBottomOf="@id/mediaThumb"
+        app:layout_constraintStart_toStartOf="@id/mediaThumb"
+        android:layout_margin="4dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

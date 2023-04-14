@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">અમે તમને શ્રેષ્ઠ નિ freeશુલ્ક એપ્લિકેશન પ્રદાન કરવા માટે સખત મહેનત કરી રહ્યા છીએ. તમારી 5-તારા રેટિંગ પૈસા કરતાં વધુ મૂલ્યવાન છે.</string>
+  <string name="msg_rate">કૃપા કરીને અમને પ્રોત્સાહિત કરવા માટે ગૂગલ પ્લે પર સરસ સમીક્ષા લખવા માટે થોડો સમય કા takeો</string>
+  <string name="text_rate">અમને 5 તારા રેટ કરો!</string>
+  <string name="text_later">પાછળથી</string>
+  <string name="text_no_rate">ના આભાર</string>
+  <string name="title_header_rate">અમને રેટ કરો</string>
+</resources>

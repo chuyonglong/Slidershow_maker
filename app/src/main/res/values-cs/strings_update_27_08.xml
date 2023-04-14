@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Usilovně pracujeme na tom, abychom vám poskytli nejlepší bezplatnou aplikaci. Vaše hodnocení pěti hvězdičkami stojí více než peníze.</string>
+  <string name="msg_rate">Udělejte si prosím chvilku a napište nám pěknou recenzi na Google Play, abyste nás povzbudili</string>
+  <string name="text_rate">Ohodnoťte nás 5 hvězdiček!</string>
+  <string name="text_later">Později</string>
+  <string name="text_no_rate">Ne, díky</string>
+  <string name="title_header_rate">Ohodnoťte nás</string>
+</resources>

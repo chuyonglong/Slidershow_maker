@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="42dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fontPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/black"
+        android:text="Roboto"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:lines="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/doubledecker_dots"/>
+
+</LinearLayout>

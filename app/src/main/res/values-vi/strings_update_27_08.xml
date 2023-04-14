@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+
+  <string name="title_rate">Chúng tôi đang nỗ lực làm việc để cung cấp cho bạn ứng dụng miễn phí tốt nhất. Việc đánh giá 5 sao của bạn đáng giá hơn cả tiền.</string>
+  <string name="msg_rate">Vui lòng dành chút thời gian viết đánh giá trên Google Play để khuyến khích chúng tôi!</string>
+  <string name="text_rate">Đánh giá chúng tôi 5 sao!</string>
+  <string name="text_later">Một lát sau</string>
+  <string name="text_no_rate">Không, cảm ơn</string>
+  <string name="title_header_rate">Đánh giá chúng tôi</string>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">हामी तपाईलाई उत्तम नि: शुल्क अनुप्रयोग प्रदान गर्न कडा मेहनत गरिरहेका छौं। तपाईंको--स्टार रेटिंग पैसा भन्दा बढी मूल्यवान छ।</string>
+  <string name="msg_rate">कृपया हामीलाई प्रोत्साहित गर्न गुगल प्लेमा एक राम्रो समीक्षा लेख्नको लागि केहि समय लिनुहोस्</string>
+  <string name="text_rate">हामीलाई stars तारे दर्जा दिनुहोस्!</string>
+  <string name="text_later">पछि</string>
+  <string name="text_no_rate">होईन, धन्यवाद</string>
+  <string name="title_header_rate">हामीलाई मूल्या .्कन गर्नुहोस्</string>
+</resources>

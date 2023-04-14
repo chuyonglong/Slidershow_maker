@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.trim_video.TrimVideoActivity"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/bgView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/playerViewInTrim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/bgView"
+        app:layout_constraintBottom_toBottomOf="@id/bgView"
+        app:layout_constraintStart_toStartOf="@id/bgView"
+        app:layout_constraintEnd_toEndOf="@id/bgView"/>
+
+    <com.acatapps.videomaker.custom_view.VideoControllerView
+        android:id="@+id/videoControllerView"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@id/bgView"
+        app:layout_constraintStart_toStartOf="@id/bgView"
+        app:layout_constraintEnd_toEndOf="@id/bgView"
+        android:focusable="true" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/buttonPlayAndPause"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_pause"
+        android:padding="8dp"
+        app:cornerRadiusImageView="100dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_ripple_circle_white_button"
+        app:rippleColor="@color/whiteAlpha70"
+        app:layout_constraintTop_toTopOf="@id/cropTimeView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/cropTimeView"/>
+
+    <com.acatapps.videomaker.custom_view.CropVideoTimeView
+        android:id="@+id/cropTimeView"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonTrimVideo"
+        app:layout_constraintStart_toEndOf="@id/buttonPlayAndPause"
+        app:layout_constraintTop_toBottomOf="@id/bgView" />
+
+    <com.acatapps.videomaker.custom_view.RippleTextView
+        android:id="@+id/buttonTrimVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text="@string/trim_video"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normalTextSize"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/bg_button_add_sticker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cropTimeView"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

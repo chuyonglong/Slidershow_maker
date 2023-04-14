@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Keményen dolgozunk annak érdekében, hogy a legjobb ingyenes alkalmazást biztosítsuk Önnek. Ötcsillagos értékelése többet ér, mint pénz.</string>
+  <string name="msg_rate">Kérjük, szánjon egy percet egy szép vélemény írására a Google Playen, hogy ösztönözze minket</string>
+  <string name="text_rate">Értékeld minket 5 csillagos!</string>
+  <string name="text_later">Később</string>
+  <string name="text_no_rate">Nem köszönöm</string>
+  <string name="title_header_rate">Értékelj minket</string>
+</resources>

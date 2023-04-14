@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">ჩვენ ვმუშაობთ იმისთვის, რომ მოგაწოდოთ საუკეთესო უფასო პროგრამა. თქვენი 5 ვარსკვლავიანი რეიტინგი მეტია, ვიდრე ფული.</string>
+  <string name="msg_rate">გთხოვთ, გაითვალისწინოთ, რომ წაიკითხეთ Google Play– ზე ლამაზი რეცენზია</string>
+  <string name="text_rate">შეაფასეთ 5 ვარსკვლავი!</string>
+  <string name="text_later">მოგვიანებით</string>
+  <string name="text_no_rate">Არა გმადლობთ</string>
+  <string name="title_header_rate">Შეგვაფასეთ</string>
+</resources>

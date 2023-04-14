@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Մենք քրտնաջան աշխատում ենք ձեզ համար լավագույն անվճար ծրագիր ապահովելու համար: Ձեր 5 աստղանի վարկանիշն ավելին է, քան փողը:</string>
+  <string name="msg_rate">Խնդրում ենք մի պահ մի լավ ակնարկ գրել Google Play- ում `մեզ խրախուսելու համար</string>
+  <string name="text_rate">Գնահատեք մեզ 5 աստղ:</string>
+  <string name="text_later">Հետագայում</string>
+  <string name="text_no_rate">Ոչ, շնորհակալություն</string>
+  <string name="title_header_rate">Գնահատեք մեզ</string>
+</resources>

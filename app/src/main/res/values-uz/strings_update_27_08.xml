@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Sizga eng yaxshi bepul ilova taqdim etish uchun astoydil harakat qilamiz. 5 yulduzli reytingingiz puldan ham qimmatga tushadi.</string>
+  <string name="msg_rate">Iltimos, Google Play-da bizni rag\'batlantirish uchun yoqimli sharh yozing</string>
+  <string name="text_rate">Bizga 5 yulduzni baholang!</string>
+  <string name="text_later">Keyinchalik</string>
+  <string name="text_no_rate">Yo\'q, rahmat</string>
+  <string name="title_header_rate">Bizni baholang</string>
+</resources>

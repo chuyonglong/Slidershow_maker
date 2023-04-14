@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Без сезне иң яхшы бушлай кушымта белән тәэмин итү өчен бик тырышабыз. Сезнең 5 йолдызлы рейтингыгыз акчага караганда кыйммәтрәк.</string>
+  <string name="msg_rate">Зинһар, бераз вакыт алыгыз, безне дәртләндерер өчен Google Play\'та яхшы рецензия языгыз</string>
+  <string name="text_rate">Безгә 5 йолдыз бәяләгез!</string>
+  <string name="text_later">Соңрак</string>
+  <string name="text_no_rate">Юк, рәхмәт</string>
+  <string name="title_header_rate">Безгә бәя бирегез</string>
+</resources>

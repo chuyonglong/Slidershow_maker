@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Kami kerja keras kanggo nyayogikeun anjeun aplikasi anu pangsaéna gratis. Rating 5-bintang anjeun langkung saé tibatan artos.</string>
+  <string name="msg_rate">Punten sakedap nyerat ulasan anu saé dina Google Play pikeun ngadorong kami</string>
+  <string name="text_rate">Laju kami 5 béntang!</string>
+  <string name="text_later">Engké</string>
+  <string name="text_no_rate">Henteu nuhun</string>
+  <string name="title_header_rate">Suku kami</string>
+</resources>

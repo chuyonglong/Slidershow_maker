@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">আমরা আপনাকে একটি সেরা ফ্রি অ্যাপ সরবরাহ করতে কঠোর পরিশ্রম করছি। আপনার 5-তারা রেটিং অর্থের চেয়ে বেশি মূল্যবান।</string>
+  <string name="msg_rate">আমাদের উত্সাহিত করতে দয়া করে গুগল প্লেতে একটি সুন্দর পর্যালোচনা লিখতে কিছুক্ষণ সময় নিন</string>
+  <string name="text_rate">আমাদের 5 তারা রেট!</string>
+  <string name="text_later">পরবর্তীতে</string>
+  <string name="text_no_rate">না ধন্যবাদ</string>
+  <string name="title_header_rate">আমাদের ব্যাপারে আপনার মতামত দিন</string>
+</resources>

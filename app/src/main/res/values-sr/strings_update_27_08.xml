@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Трудимо се да вам пружимо најбољу бесплатну апликацију. Ваша оцена са 5 звездица вреди више од новца.</string>
+  <string name="msg_rate">Одвојите тренутак да напишете лепу рецензију на Гоогле Плаи-у да бисте нас охрабрили</string>
+  <string name="text_rate">Оцените нас 5 звездица!</string>
+  <string name="text_later">Касније</string>
+  <string name="text_no_rate">Не хвала</string>
+  <string name="title_header_rate">Оцените нас</string>
+</resources>

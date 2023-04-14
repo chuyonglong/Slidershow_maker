@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">हम आपको एक सर्वश्रेष्ठ मुफ्त ऐप प्रदान करने के लिए कड़ी मेहनत कर रहे हैं। आपकी 5-स्टार रेटिंग पैसे से अधिक है।</string>
+  <string name="msg_rate">कृपया हमें प्रोत्साहित करने के लिए Google Play पर एक अच्छी समीक्षा लिखने के लिए कुछ समय लें</string>
+  <string name="text_rate">हमें 5 स्टार रेट करें!</string>
+  <string name="text_later">बाद में</string>
+  <string name="text_no_rate">जी नहीं, धन्यवाद</string>
+  <string name="title_header_rate">हमें रेटिंग दें</string>
+</resources>

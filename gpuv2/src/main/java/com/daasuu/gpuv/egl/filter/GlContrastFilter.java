@@ -1,0 +1,42 @@
+package com.daasuu.gpuv.egl.filter;
+
+
+import android.opengl.GLES20;
+
+
+public class GlContrastFilter extends GlFilter {
+
+    private static final String CONTRAST_FRAGMENT_SHADER = "" +
+            "precision mediump float;" +
+            " varying vec2 vTextureCoord;\n" +
+            " \n" +
+            " uniform lowp sampler2D sTexture;\n" +
+            " uniform lowp float contrast;\n" +
+            " \n" +
+            " void main()\n" +
+            " {\n" +
+            "     lowp vec4 textureColor = texture2D(sTexture, vTextureCoord);\n" +
+            "     \n" +
+            "     gl_FragColor = vec4(((textureColor.rgb - vec3(0.5)) * contrast + vec3(0.5)), textureColor.w);\n" +
+            " }";
+
+
+    public GlContrastFilter() {
+        super(DEFAULT_VERTEX_SHADER, CONTRAST_FRAGMENT_SHADER);filterName = "Contrast";
+    }
+
+    private float contrast = 1.2f;
+
+    public void setContrast(float contrast) {
+        this.contrast = contrast;
+    }
+
+    public float getContrast() {
+        return contrast;
+    }
+
+    @Override
+    public void onDraw() {
+        GLES20.glUniform1f(getHandle("contrast"), contrast);
+    }
+}

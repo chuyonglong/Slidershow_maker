@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+   
+    <string name="title_rate">We are working hard to provide you with a best free app. Your 5-star rating is worth more than money.</string>
+    <string name="msg_rate">Please take a moment to write a nice review on Google Play to encourage us</string>
+    <string name="text_rate">Rate us 5 stars!</string>
+    <string name="text_later">Later</string>
+    <string name="text_no_rate">No, thanks</string>
+    <string name="title_header_rate">Rate us</string>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Біз сізге ең жақсы ақысыз бағдарламаны ұсыну үшін көп жұмыс жасаймыз. Сіздің 5 жұлдызды рейтингіңіз ақшадан да құнды.</string>
+  <string name="msg_rate">Бізді жігерлендіру үшін Google Play-де жағымды пікір жазуға уақыт бөліңіз</string>
+  <string name="text_rate">Бізге 5 жұлдызды бағалаңыз!</string>
+  <string name="text_later">Кейінірек</string>
+  <string name="text_no_rate">Жоқ Рақмет</string>
+  <string name="title_header_rate">Бізді бағалаңыз</string>
+</resources>

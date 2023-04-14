@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="normalTextSize">14dp</dimen>
+    <dimen name="smallTextSize">12dp</dimen>
+    <dimen name="largeTextSize">16dp</dimen>
+
+    <dimen name="titleTextSize">20dp</dimen>
+
+    <dimen name="halfOfBaseMargin">8dp</dimen>
+    <dimen name="baseMargin">16dp</dimen>
+    <dimen name="doubleOfBaseMargin">32dp</dimen>
+
+</resources>

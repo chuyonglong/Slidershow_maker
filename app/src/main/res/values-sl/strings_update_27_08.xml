@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Trudimo se, da bi vam zagotovili najboljšo brezplačno aplikacijo. Vaša ocena 5 zvezdic je vredna več kot denar.</string>
+  <string name="msg_rate">Prosimo, vzemite si trenutek in napišite lepo recenzijo v Googlu Play, da nas spodbudi</string>
+  <string name="text_rate">Ocenite nas 5 zvezdic!</string>
+  <string name="text_later">Pozneje</string>
+  <string name="text_no_rate">Ne hvala</string>
+  <string name="title_header_rate">Ocenite nas</string>
+</resources>

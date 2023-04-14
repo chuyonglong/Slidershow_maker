@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Мо мекӯшем, ки ба шумо беҳтарин барномаи ройгонро пешкаш кунем. Рейтинги 5-ситораи шумо аз пул зиёдтар аст.</string>
+  <string name="msg_rate">Лутфан лаҳзае нависед, ки дар Google Play шарҳи хубе нависед, то моро рӯҳбаланд кунад</string>
+  <string name="text_rate">5 ситораи моро баҳо диҳед!</string>
+  <string name="text_later">Баъдтар</string>
+  <string name="text_no_rate">Не ташаккур</string>
+  <string name="title_header_rate">Моро баҳо диҳед</string>
+</resources>

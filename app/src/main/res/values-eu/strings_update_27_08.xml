@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Lan handia egiten ari gara doako aplikaziorik onena eskaintzeko. Zure 5 izarreko balorazioak dirua baino gehiago merezi du.</string>
+  <string name="msg_rate">Har ezazu momentu bat Google Play-en berrikuspen polit bat idazteko, animatzeko</string>
+  <string name="text_rate">Baloratu 5 izar!</string>
+  <string name="text_later">Beranduago</string>
+  <string name="text_no_rate">Ez eskerrik asko</string>
+  <string name="title_header_rate">Balora iezaguzu</string>
+</resources>

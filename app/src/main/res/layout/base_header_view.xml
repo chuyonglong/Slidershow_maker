@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/greenA01">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_back_vector"
+        android:padding="16dp"
+        android:background="@drawable/bg_ripple_circle_back_button"
+        android:layout_marginStart="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/screenTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="@dimen/largeTextSize"
+        android:lines="1"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/icBack"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/inputSearchEditText"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grayA03"
+        android:hint="@string/search"
+        android:layout_marginStart="20dp"
+        android:lines="1"
+        android:textSize="@dimen/normalTextSize"
+        android:paddingEnd="46dp"
+        android:paddingStart="4dp"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@id/icBack"
+        app:layout_constraintEnd_toStartOf="@id/rightButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icClearSearch"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:padding="4dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_close_gray"
+        android:tint="@color/white"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toTopOf="@id/inputSearchEditText"
+        app:layout_constraintBottom_toBottomOf="@id/inputSearchEditText"
+        app:layout_constraintEnd_toEndOf="@id/inputSearchEditText"/>
+
+    <TextView
+        android:id="@+id/txtCoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text=" 0 Coin"
+        android:textColor="@color/orangeA02"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:padding="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/subRightButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_coin" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/subRightButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="12dp"
+        android:layout_marginEnd="4dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_ripple_circle_back_button"
+        android:src="@drawable/ic_check_all"
+        android:layout_marginStart="4dp"
+        app:cornerRadiusImageView="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/rightButton"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/rightButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="12dp"
+
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/bg_ripple_circle_back_button"
+        android:src="@drawable/ic_camera_vector"
+        android:layout_marginStart="4dp"
+        app:cornerRadiusImageView="100dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

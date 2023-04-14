@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">យើងកំពុងខិតខំផ្តល់ឱ្យអ្នកនូវកម្មវិធីឥតគិតថ្លៃល្អបំផុត។ ការវាយតម្លៃផ្កាយ ៥ របស់អ្នកគឺមានតម្លៃច្រើនជាងប្រាក់ទៅទៀត។</string>
+  <string name="msg_rate">សូមចំណាយពេលបន្តិចដើម្បីសរសេរការពិនិត្យឡើងវិញល្អនៅលើកម្សាន្ត Google ដើម្បីលើកទឹកចិត្តដល់ពួកយើង</string>
+  <string name="text_rate">វាយតម្លៃយើងផ្កាយ ៥!</string>
+  <string name="text_later">ក្រោយមកទៀត</string>
+  <string name="text_no_rate">អត់អី​ទេ​អរគុណ​ហើយ</string>
+  <string name="title_header_rate">វាយតម្លៃយើង</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="title_rate">Nagsusumikap kami upang mabigyan ka ng isang pinakamahusay na libreng app. Ang iyong 5-star na rating ay nagkakahalaga ng higit sa pera.</string>
+  <string name="msg_rate">Mangyaring sandali upang sumulat ng isang magandang pagsusuri sa Google Play upang hikayatin kami</string>
+  <string name="text_rate">I-rate sa amin ang 5 bituin!</string>
+  <string name="text_later">Mamaya</string>
+  <string name="text_no_rate">Salamat nalang</string>
+  <string name="title_header_rate">I-rate sa amin</string>
+</resources>
