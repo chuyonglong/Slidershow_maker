@@ -12,37 +12,32 @@ android {
     buildToolsVersion "29.0.3"
     defaultConfig {
         applicationId "com.trungtv.slidershow"
-        minSdkVersion 21
+        minSdkVersion 24
         targetSdkVersion 31
         versionCode 1
         versionName "1.0.0"
         renderscriptSupportModeEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-    buildTypes {
-        release {
-            minifyEnabled true
 
-            shrinkResources true
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    signingConfigs {
+        release {
+            keyAlias "slideshowmaker"
+            keyPassword "123456"
+            storeFile file("../key_store.jks")
+            storePassword "123456"
         }
+    }
+    buildTypes {
         debug {
             minifyEnabled false
-           // useProguard true
-            //shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
-        android.applicationVariants.all { variant ->
-            variant.outputs.all {
-                def appName = "acatapps_videomaker"
-                def date = new Date()
-                def formattedDate = date.format('dd-MM')
-                Calendar calendar = GregorianCalendar.getInstance();
-
-                def hour = calendar.get(Calendar.HOUR_OF_DAY);
-                def minute = calendar.get(Calendar.MINUTE);
-                outputFileName = appName + "__${variant.versionName}" + "__${formattedDate}__${hour}h${minute}" + ".apk"
-            }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
     compileOptions {
