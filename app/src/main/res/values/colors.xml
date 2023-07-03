@@ -21,7 +21,8 @@
 
     <color name="blueA01">#73A6FF</color>
 
-    <color name="greenA01">#26cac3</color>
+<!--    <color name="greenA01">#26cac3</color>-->
+    <color name="greenA01">#000000</color>
 
     <color name="orangeA01">#26cac3</color>
     <color name="orangeA02">#FF5454</color>

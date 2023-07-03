@@ -66,7 +66,7 @@
         app:layout_constraintEnd_toEndOf="@id/inputSearchEditText"/>
 
     <TextView
-        android:id="@+id/txtCoin"
+        android:id="@+id/txtCoin_google_pay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -74,19 +74,22 @@
         android:textColor="@color/orangeA02"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_google_pay"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_google_pay"
+        app:layout_constraintTop_toTopOf="@+id/imageView_google_pay"
+        android:visibility="invisible"/>
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView_google_pay"
         android:layout_width="38dp"
         android:layout_height="38dp"
         android:padding="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/subRightButton"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_coin" />
+        app:srcCompat="@drawable/ic_coin"
+        android:visibility="invisible"
+        />
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/subRightButton"
         android:layout_width="48dp"

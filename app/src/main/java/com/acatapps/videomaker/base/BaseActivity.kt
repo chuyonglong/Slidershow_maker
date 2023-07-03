@@ -77,11 +77,11 @@ abstract class BaseActivity : AppCompatActivity() {
 
         initViews()
         initActions()
-        txtCoin.setOnClickListener {
+        txtCoin_google_pay.setOnClickListener {
             val intent = Intent(this, PurchaseInAppActivity::class.java)
             startActivity(intent)
         }
-        imageView2.setOnClickListener {
+        imageView_google_pay.setOnClickListener {
             val intent = Intent(this, PurchaseInAppActivity::class.java)
             startActivity(intent)
         }
@@ -136,7 +136,7 @@ abstract class BaseActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        txtCoin.text = MainApp.instance.getPreference()?.getValueCoin().toString()
+        txtCoin_google_pay.text = MainApp.instance.getPreference()?.getValueCoin().toString()
     }
 
     var searchMode = false

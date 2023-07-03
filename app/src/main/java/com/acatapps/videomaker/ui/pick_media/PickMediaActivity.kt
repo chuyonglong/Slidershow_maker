@@ -13,6 +13,7 @@ import android.provider.Settings
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
@@ -54,6 +55,7 @@ class PickMediaActivity : BaseActivity(), KodeinAware {
     private lateinit var mPickMediaViewModel: PickMediaViewModel
 
     private var mVideoActionType = VideoActionType.SLIDE
+    private var TAG = "PickMediaActivity"
 
     private val mMediaPickedAdapter = MediaPickedAdapter {
 
@@ -265,7 +267,7 @@ class PickMediaActivity : BaseActivity(), KodeinAware {
                     for (item in mMediaPickedAdapter.itemList) {
                         items.add(item.path)
                     }
-                    Logger.e("items size = ${items.size}")
+                    Log.d(TAG, "initActions: items size = ${items.size}")
                     if (mMediaType == MediaType.PHOTO) {
                         if (mActionCode == ADD_MORE_PHOTO) {
                             val intent = Intent().apply {
@@ -361,6 +363,7 @@ class PickMediaActivity : BaseActivity(), KodeinAware {
         }
     }
 
+    @SuppressLint("Range")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
@@ -420,8 +423,6 @@ class PickMediaActivity : BaseActivity(), KodeinAware {
                         mPickMediaViewModel.addNewMediaData(mediaData)
                         mPickMediaViewModel.onPickImage(MediaDataModel(mediaData))
                     }
-
-
                 }
             }
 

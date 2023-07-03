@@ -37,17 +37,17 @@ class GSTransitionListAdapter(
         view.setOnClickListener {
             if (item.gsTransition.lock) {
                 MainApp.instance.getPreference()?.run {
-                    if (this.getValueCoin() >= 5) {
-                        var itemSet: MutableSet<String> = getListKeyBy() ?: mutableSetOf()
-                        itemSet.add(position.toString())
-                        this.setListKeyBy(itemSet)
-                        this.setValueCoin(getValueCoin() - 5)
-                        addGSTransitionData(Utils.getGSTransitionList())
-                    } else {
-                        openInapp.invoke()
-                        Toast.makeText(view.context, "Bạn cần mua item", Toast.LENGTH_SHORT)
-                            .show()
-                    }
+//                    if (this.getValueCoin() >= 5) {
+                    val itemSet: MutableSet<String> = getListKeyBy() ?: mutableSetOf()
+                    itemSet.add(position.toString())
+                    this.setListKeyBy(itemSet)
+                    this.setValueCoin(getValueCoin() - 5)
+                    addGSTransitionData(Utils.getGSTransitionList())
+//                    } else {
+//                        openInapp.invoke()
+//                        Toast.makeText(view.context, "You need to buy items", Toast.LENGTH_SHORT)
+//                            .show()
+//                    }
                 }
 
             } else {
