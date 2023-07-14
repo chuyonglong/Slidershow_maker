@@ -1,7 +1,9 @@
 package com.acatapps.videomaker.custom_view.custom_imageshow
 
+import android.annotation.SuppressLint
 import android.opengl.GLES20
 import android.opengl.GLSurfaceView
+import android.util.Log
 import com.acatapps.videomaker.application.MainApp
 import com.acatapps.videomaker.models.ThemeData
 
@@ -33,6 +35,7 @@ class ImageSlideRenderer(gsTransition: com.acatapps.videomaker.transition.GSTran
 
     }
 
+    @SuppressLint("SuspiciousIndentation")
     override fun onDrawFrame(gl: GL10?) {
         GLES20.glClearColor(0f,0f,0f,1f)
         GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT or GLES20.GL_DEPTH_BUFFER_BIT)
@@ -43,7 +46,7 @@ class ImageSlideRenderer(gsTransition: com.acatapps.videomaker.transition.GSTran
     }
 
     fun changeFrameData(frameData: ImageSlideFrame) {
-        mImageSlideDrawer?.changeFrameData(frameData)
+         mImageSlideDrawer?.changeFrameData(frameData)
     }
 
 

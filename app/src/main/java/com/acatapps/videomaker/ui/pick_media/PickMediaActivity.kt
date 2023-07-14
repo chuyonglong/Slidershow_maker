@@ -30,16 +30,15 @@ import com.acatapps.videomaker.adapter.ItemTouchHelperCallback
 import com.acatapps.videomaker.adapter.MediaPickedAdapter
 import com.acatapps.videomaker.adapter.PickMediaPagerAdapter
 import com.acatapps.videomaker.base.BaseActivity
-import com.acatapps.videomaker.utils.MediaType
-import com.acatapps.videomaker.utils.VideoActionType
 import com.acatapps.videomaker.models.MediaData
 import com.acatapps.videomaker.models.MediaDataModel
 import com.acatapps.videomaker.models.MediaPickedDataModel
-import com.acatapps.videomaker.ui.edit_video.VideoEditSlideActivity
 import com.acatapps.videomaker.ui.slide_show.ImageSlideShowActivity
 import com.acatapps.videomaker.ui.trim_video.TrimVideoActivity
 import com.acatapps.videomaker.utils.Logger
+import com.acatapps.videomaker.utils.MediaType
 import com.acatapps.videomaker.utils.Utils
+import com.acatapps.videomaker.utils.VideoActionType
 import kotlinx.android.synthetic.main.activity_pick_media.*
 import org.kodein.di.KodeinAware
 import org.kodein.di.android.closestKodein
@@ -55,7 +54,6 @@ class PickMediaActivity : BaseActivity(), KodeinAware {
     private lateinit var mPickMediaViewModel: PickMediaViewModel
 
     private var mVideoActionType = VideoActionType.SLIDE
-    private var TAG = "PickMediaActivity"
 
     private val mMediaPickedAdapter = MediaPickedAdapter {
 
@@ -241,9 +239,9 @@ class PickMediaActivity : BaseActivity(), KodeinAware {
                                     setResult(Activity.RESULT_OK, intent)
                                     finish()
                                 } else {
-                                    val intent = Intent(this, VideoEditSlideActivity::class.java)
-                                    intent.putStringArrayListExtra("Video picked list", items)
-                                    startActivity(intent)
+//                                    val intent = Intent(this, VideoEditSlideActivity::class.java)
+//                                    intent.putStringArrayListExtra("Video picked list", items)
+//                                    startActivity(intent)
                                 }
 
                             } else {
@@ -267,14 +265,10 @@ class PickMediaActivity : BaseActivity(), KodeinAware {
                     for (item in mMediaPickedAdapter.itemList) {
                         items.add(item.path)
                     }
-                    Log.d(TAG, "initActions: items size = ${items.size}")
                     if (mMediaType == MediaType.PHOTO) {
                         if (mActionCode == ADD_MORE_PHOTO) {
                             val intent = Intent().apply {
-                                putStringArrayListExtra(
-                                    ImageSlideShowActivity.imagePickedListKey,
-                                    items
-                                )
+                                putStringArrayListExtra(ImageSlideShowActivity.imagePickedListKey,items)
                             }
                             setResult(Activity.RESULT_OK, intent)
                             finish()
@@ -292,9 +286,9 @@ class PickMediaActivity : BaseActivity(), KodeinAware {
                         }
 
                     } else {
-                            val intent = Intent(this, VideoEditSlideActivity::class.java)
-                            intent.putStringArrayListExtra("Video picked list", items)
-                            startActivity(intent)
+//                            val intent = Intent(this, VideoEditSlideActivity::class.java)
+//                            intent.putStringArrayListExtra("Video picked list", items)
+//                            startActivity(intent)
                         }
 
                 }

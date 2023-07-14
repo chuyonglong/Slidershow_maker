@@ -1,6 +1,7 @@
 package com.acatapps.videomaker.custom_view.custom_imageshow
 
 import android.opengl.GLES20
+import android.util.Log
 import com.acatapps.videomaker.application.MainApp
 import com.acatapps.videomaker.utils.*
 import java.nio.ByteBuffer
@@ -52,14 +53,23 @@ class ImageSlideDrawer {
     }
 
     fun prepare() {
+        Log.d("ImageSlideDrawer", "prepare: -------------------------------------------------------------------")
         mVertexShaderHandle = Utils.compileShader(GLES20.GL_VERTEX_SHADER, getVertexShader())
         mFragmentShaderHandle = Utils.compileShader(GLES20.GL_FRAGMENT_SHADER, getFragmentShader(mTransition.transitionCodeId))
 
         mProgramHandle = Utils.createAndLinkProgram(mVertexShaderHandle, mFragmentShaderHandle, arrayOf("_p"))
         synchronized(this) { mUpdateTexture = true }
     }
+    /**
+     * 获取随机动画
+     */
+    private fun getRandomTransition(): com.acatapps.videomaker.transition.GSTransition {
+        val randomType = Utils.TransitionType.values().random()
+        return Utils.getTransitionByType(randomType)
+    }
 
     fun prepare(gsTransition: com.acatapps.videomaker.transition.GSTransition) {
+        Log.d("ImageSlideDrawer", "prepare: -------------------------------------------------------------------111111111")
         mTransition = gsTransition
         mVertexShaderHandle = Utils.compileShader(GLES20.GL_VERTEX_SHADER, getVertexShader())
         mFragmentShaderHandle = Utils.compileShader(GLES20.GL_FRAGMENT_SHADER, getFragmentShader(mTransition.transitionCodeId))
@@ -121,6 +131,7 @@ class ImageSlideDrawer {
         GLES20.glUniform1f(zoom1ProgressLocation, frameData.zoomProgress1)
 
         val progressLocation = GLES20.glGetUniformLocation(mProgramHandle, "progress")
+
         GLES20.glUniform1f(progressLocation, frameData.progress)
 
         GLES20.glDrawArrays(GLES20.GL_TRIANGLES, 0, 6)
@@ -187,10 +198,7 @@ class ImageSlideDrawer {
         mTransition = gsTransition
         mFragmentShaderHandle = fragmentShaderHandle
         GLES20.glDeleteProgram(mProgramHandle)
-        mProgramHandle = Utils.createAndLinkProgram(
-            mVertexShaderHandle, mFragmentShaderHandle,
-            arrayOf("_p")
-        )
+        mProgramHandle = Utils.createAndLinkProgram(mVertexShaderHandle, mFragmentShaderHandle, arrayOf("_p"))
     }
 
     private fun getVertexShader(): String {

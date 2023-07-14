@@ -2,14 +2,19 @@ package com.acatapps.videomaker.custom_view.custom_imageshow
 
 import android.graphics.Bitmap
 import android.graphics.Canvas
+import android.util.Log
 import android.view.View
 import com.acatapps.videomaker.utils.Utils
 import java.io.File
 import kotlin.math.max
 
-class ImageSlideDataContainer(val mImageList: ArrayList<String> = ArrayList()) {
+class ImageSlideDataContainer(
+    private val mImageList: ArrayList<String> = ArrayList(),
+    private val mySlides: SlidesData? = null
+) {
 
-    private val mImageSlideDataList = ArrayList<ImageSlideData>()
+    val mImageSlideDataList = ArrayList<ImageSlideData>()
+    private var isUpdateSlide = false
 
     @Volatile
     var delayTimeMs = 2500
@@ -17,6 +22,7 @@ class ImageSlideDataContainer(val mImageList: ArrayList<String> = ArrayList()) {
     private val fps = 25
     val imageList get() = mImageList
     private var mCurrentSlideIndex = 0
+    var firstPicturePath: String = "preview/NONE.jpg"
 
     @Volatile
     private lateinit var mCurrentBitmap: Bitmap
@@ -31,10 +37,15 @@ class ImageSlideDataContainer(val mImageList: ArrayList<String> = ArrayList()) {
     private var mToLookupBitmap = Utils.getBitmapFromAsset("lut/NONE.jpg")
 
     init {
-        initData()
+        if (mySlides != null) {
+            initDataHistory()
+        } else {
+            initData()
+        }
+
     }
 
-    fun initData() {
+    private fun initData() {
         mImageSlideDataList.clear()
         if (mImageList.size > 0) {
             for (index in 0 until mImageList.size) {
@@ -47,12 +58,14 @@ class ImageSlideDataContainer(val mImageList: ArrayList<String> = ArrayList()) {
                     ImageSlideData(
                         View.generateViewId() + System.currentTimeMillis(),
                         mImageList[index],
-                        nextImagePath
+                        nextImagePath,
+                        Utils.TransitionType.values().random()
                     )
                 mImageSlideDataList.add(imageSlideData)
             }
 
             val firstSlide = mImageSlideDataList[0]
+            firstPicturePath = firstSlide.fromImagePath
             mCurrentBitmap = getBitmapResized(firstSlide.fromImagePath)
             mCurrentSlideId = firstSlide.slideId
             val secondSlide = mImageSlideDataList[1]
@@ -61,6 +74,18 @@ class ImageSlideDataContainer(val mImageList: ArrayList<String> = ArrayList()) {
         }
         updateBackupSlide()
 
+    }
+
+    private fun initDataHistory() {
+        firstPicturePath = mySlides!!.firstPicturePath
+        mImageSlideDataList.clear()
+        mImageSlideDataList.addAll(mySlides.slides)
+        val firstSlide = mImageSlideDataList[0]
+        mCurrentBitmap = getBitmapResized(firstSlide.fromImagePath)
+        mCurrentSlideId = firstSlide.slideId
+        val secondSlide = mImageSlideDataList[1]
+        mNextBitmap = getBitmapResized(secondSlide.fromImagePath)
+        updateBackupSlide()
     }
 
     private val noneLutPath = "lut/NONE.jpg"
@@ -101,15 +126,13 @@ class ImageSlideDataContainer(val mImageList: ArrayList<String> = ArrayList()) {
 
     private var mCurrentSlideId = 1L
     fun getFrameDataByTime(timeMs: Int, needReload: Boolean = false): ImageSlideFrame {
-
         var slideIndex = ((timeMs) / (delayTimeMs + transitionTimeMs))
         if (slideIndex == -1) slideIndex = mImageSlideDataList.size - 1
         val targetSlide = mImageSlideDataList[slideIndex]
         mCurrentSlideIndex = slideIndex
 
         val delta = timeMs - slideIndex * (delayTimeMs + transitionTimeMs)
-        var progress: Float
-        progress = when {
+        val progress: Float = when {
             delta in 0..delayTimeMs -> 0f
             slideIndex == mImageSlideDataList.size - 1 -> 0f
             else -> {
@@ -141,6 +164,7 @@ class ImageSlideDataContainer(val mImageList: ArrayList<String> = ArrayList()) {
             mCurrentSlideId = targetSlide.slideId
 
         }
+        val transitionType = mImageSlideDataList[mCurrentSlideIndex].transitionType
         return ImageSlideFrame(
             mCurrentBitmap,
             mNextBitmap,
@@ -149,7 +173,8 @@ class ImageSlideDataContainer(val mImageList: ArrayList<String> = ArrayList()) {
             progress,
             mCurrentSlideId,
             zoom,
-            zoom1
+            zoom1,
+            transitionType
         )
     }
 
@@ -167,9 +192,8 @@ class ImageSlideDataContainer(val mImageList: ArrayList<String> = ArrayList()) {
     }
 
     fun seekTo(timeMs: Int, needReload: Boolean = false): ImageSlideFrame {
-
         var slideIndex = ((timeMs) / (delayTimeMs + transitionTimeMs))
-
+        var transitionType = Utils.TransitionType.NONE
         if (slideIndex == mImageSlideDataList.size) slideIndex = 0
         mCurrentSlideIndex = slideIndex
         val targetSlide = mImageSlideDataList[slideIndex]
@@ -196,6 +220,7 @@ class ImageSlideDataContainer(val mImageList: ArrayList<String> = ArrayList()) {
             mCurrentSlideId = targetSlide.slideId
 
         }
+        transitionType = mImageSlideDataList[mCurrentSlideIndex].transitionType
         return ImageSlideFrame(
             mCurrentBitmap,
             mNextBitmap,
@@ -204,7 +229,8 @@ class ImageSlideDataContainer(val mImageList: ArrayList<String> = ArrayList()) {
             progress,
             mCurrentSlideId,
             zoom,
-            zoom1
+            zoom1,
+            transitionType
         )
     }
 
@@ -352,7 +378,8 @@ class ImageSlideDataContainer(val mImageList: ArrayList<String> = ArrayList()) {
             progress,
             mCurrentSlideId,
             zoom,
-            zoom1
+            zoom1,
+            Utils.TransitionType.values().random()
         )
     }
 
@@ -364,5 +391,10 @@ class ImageSlideDataContainer(val mImageList: ArrayList<String> = ArrayList()) {
 
     fun changeCurrentSlideId(id: Long) {
         mCurrentSlideId = id
+    }
+
+
+    fun updateImageSlideDataList(index: Int, transitionType: Utils.TransitionType) {
+        mImageSlideDataList[index].transitionType = transitionType
     }
 }

@@ -1,6 +1,5 @@
 package com.acatapps.videomaker.ui.my_video
 
-import android.content.Intent
 import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.widget.PopupMenu
@@ -10,10 +9,10 @@ import com.acatapps.videomaker.R
 import com.acatapps.videomaker.adapter.AllMyStudioAdapter
 import com.acatapps.videomaker.base.BaseActivity
 import com.acatapps.videomaker.models.MyStudioDataModel
-import com.acatapps.videomaker.ui.edit_video.VideoEditSlideActivity
 import com.acatapps.videomaker.ui.share_video.ShareVideoActivity
 import com.acatapps.videomaker.ui.trim_video.TrimVideoActivity
-import com.acatapps.videomaker.utils.*
+import com.acatapps.videomaker.utils.Logger
+import com.acatapps.videomaker.utils.Utils
 import kotlinx.android.synthetic.main.activity_base_layout.*
 import kotlinx.android.synthetic.main.activity_my_video.*
 import kotlinx.android.synthetic.main.base_header_view.view.*
@@ -125,17 +124,17 @@ class MyVideoActivity : BaseActivity() {
                             onDeleteItem(myStudioDataModel.filePath)
                         }
 
-                        R.id.edit -> {
-
-                            val intent =
-                                Intent(this@MyVideoActivity, VideoEditSlideActivity::class.java)
-                            intent.putStringArrayListExtra(
-                                "Video picked list",
-                                arrayListOf(myStudioDataModel.filePath)
-                            )
-                            startActivity(intent)
-
-                        }
+//                        R.id.edit -> {
+//
+//                            val intent =
+//                                Intent(this@MyVideoActivity, VideoEditSlideActivity::class.java)
+//                            intent.putStringArrayListExtra(
+//                                "Video picked list",
+//                                arrayListOf(myStudioDataModel.filePath)
+//                            )
+//                            startActivity(intent)
+//
+//                        }
 
                         R.id.trim -> {
                             TrimVideoActivity.gotoActivity(

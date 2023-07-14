@@ -3,6 +3,7 @@ package com.acatapps.videomaker.custom_view.custom_imageshow
 import android.content.Context
 import android.opengl.GLSurfaceView
 import android.util.AttributeSet
+import android.util.Log
 import com.acatapps.videomaker.models.ThemeData
 
 class ImageSlideGLView(context: Context, attrs: AttributeSet?) : GLSurfaceView(context, attrs) {
@@ -22,7 +23,6 @@ class ImageSlideGLView(context: Context, attrs: AttributeSet?) : GLSurfaceView(c
 
 
     fun changeTransition(gsTransition: com.acatapps.videomaker.transition.GSTransition) {
-
         queueEvent(Runnable {
             mImageSlideRenderer.changeTransition(gsTransition)
         })

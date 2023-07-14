@@ -4,27 +4,34 @@ import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
+import android.os.Bundle
 import android.os.CountDownTimer
 import android.provider.Settings
+import android.util.Log
 import android.view.View
-import android.widget.VideoView
 import androidx.activity.viewModels
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.acatapps.videomaker.R
 import com.acatapps.videomaker.adapter.HistoryAdapter
+import com.acatapps.videomaker.adapter.MySlidesInHomeAdapter
 import com.acatapps.videomaker.adapter.MyStudioInHomeAdapter
 import com.acatapps.videomaker.adapter.ThemeInHomeAdapter
 import com.acatapps.videomaker.base.BaseActivity
-import com.acatapps.videomaker.utils.MediaType
+import com.acatapps.videomaker.custom_view.custom_imageshow.SlidesData
+import com.acatapps.videomaker.mmkv.MmkvTitleUtil
 import com.acatapps.videomaker.models.MyStudioDataModel
 import com.acatapps.videomaker.ui.my_video.MyVideoActivity
 import com.acatapps.videomaker.ui.pick_media.PickMediaActivity
 import com.acatapps.videomaker.ui.share_video.ShareVideoActivity
 import com.acatapps.videomaker.ui.slide_show.ImageSlideShowActivity
-
-import com.acatapps.videomaker.utils.*
+import com.acatapps.videomaker.utils.Logger
+import com.acatapps.videomaker.utils.MediaType
+import com.acatapps.videomaker.utils.Utils
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+import com.tencent.mmkv.MMKV
 import kotlinx.android.synthetic.main.activity_home.*
 import java.io.File
 import java.io.FileOutputStream
@@ -38,12 +45,14 @@ class HomeActivity : BaseActivity() {
         const val CAMERA_PERMISSION_REQUEST = 1002
         const val STORAGE_PERMISSION_REQUEST = 1003
     }
+
     private lateinit var historyAdapter: HistoryAdapter
     private val mThemeInHomeAdapter = ThemeInHomeAdapter()
     private val viewModel: HomeViewModel by viewModels {
         HomeViewModel.HomeViewModelFactory(this.applicationContext)
     }
     private val mMyStudioAdapter = MyStudioInHomeAdapter()
+    private var mMySlidesAdapter = MySlidesInHomeAdapter()
 
     override fun getContentResId(): Int = R.layout.activity_home
 
@@ -52,13 +61,17 @@ class HomeActivity : BaseActivity() {
 
         comebackStatus = getString(R.string.do_you_want_to_leave)
         hideHeader()
-
-
         myStudioListView.apply {
             adapter = mMyStudioAdapter
             layoutManager =
                 LinearLayoutManager(this@HomeActivity, LinearLayoutManager.HORIZONTAL, false)
         }
+        mySlidesView.apply {
+            adapter = mMySlidesAdapter
+            layoutManager =
+                LinearLayoutManager(this@HomeActivity, LinearLayoutManager.HORIZONTAL, false)
+        }
+
 
         newThemeListView.apply {
             adapter = mThemeInHomeAdapter
@@ -72,8 +85,8 @@ class HomeActivity : BaseActivity() {
         historyAdapter = HistoryAdapter(itemOnClick = {
             val intent = Intent(this, ImageSlideShowActivity::class.java)
             intent.putExtra("SaveVideo", it)
-           startActivity(intent)
-        },itemClick = null )
+            startActivity(intent)
+        }, itemClick = null)
         rv_project.adapter = historyAdapter
         rv_project.setHasFixedSize(true)
         viewModel.getAll().observe(this) {
@@ -127,9 +140,7 @@ class HomeActivity : BaseActivity() {
     private fun onInit() {
         onSplashComplete = true
         needShowDialog = true
-
         if (checkStoragePermission()) {
-
             Thread {
                 try {
                     initThemeData()
@@ -141,8 +152,6 @@ class HomeActivity : BaseActivity() {
                 }
 
             }.start()
-
-        } else {
 
         }
     }
@@ -176,7 +185,11 @@ class HomeActivity : BaseActivity() {
         mMyStudioAdapter.onClickItem = {
             ShareVideoActivity.gotoActivity(this, it.filePath)
         }
-
+        mMySlidesAdapter.onClickItem = {
+            val intent = Intent(this, ImageSlideShowActivity::class.java)
+            intent.putExtra(ImageSlideShowActivity.imageSlideListKey, it)
+            startActivity(intent)
+        }
 
     }
 
@@ -291,7 +304,8 @@ class HomeActivity : BaseActivity() {
         }
         copyDefaultTheme()
     }
-    private fun getData(){
+
+    private fun getData() {
 
     }
 
@@ -388,6 +402,24 @@ class HomeActivity : BaseActivity() {
 
     }
 
+    private fun getAllSlideItem(): ArrayList<SlidesData> {
+        val slidesDataList = ArrayList<SlidesData>()
+        val allKeys = MMKV.defaultMMKV().allKeys()
+        if (allKeys != null) {
+            for (key in allKeys) {
+                if (!key.startsWith(MmkvTitleUtil.mySlides)) {
+                    continue
+                }
+                val str = MMKV.defaultMMKV().decodeString(key)
+                str?.let {
+                    slidesDataList.add(Gson().fromJson(str, object : TypeToken<SlidesData>() {}.type))
+                }
+            }
+        }
+        return slidesDataList
+    }
+
+
     private var mOnPause = false
     override fun onPause() {
         super.onPause()
@@ -417,6 +449,8 @@ class HomeActivity : BaseActivity() {
         mThemeInHomeAdapter.notifyDataSetChanged()
         if (checkStoragePermission()) {
             getAllMyStudioItem()
+            val slidesDataList = getAllSlideItem()
+            mMySlidesAdapter.setItemList(slidesDataList)
             onInit()
         } else {
 

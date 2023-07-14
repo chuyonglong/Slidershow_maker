@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="4dp">
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -11,33 +12,35 @@
         android:layout_height="0dp"
         android:scaleType="centerCrop"
         app:layout_constraintDimensionRatio="132:156"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/lookupNameLabel"
         android:layout_width="0dp"
         android:layout_height="16dp"
-        android:textColor="@color/white"
-        android:textSize="@dimen/smallTextSize"
+        android:background="@color/blackAlpha45"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto_medium"
         android:gravity="center"
         android:lines="1"
-        android:ellipsize="end"
         android:paddingStart="2dp"
         android:paddingEnd="2dp"
-        android:fontFamily="@font/roboto_medium"
-        android:background="@color/blackAlpha45"
+        android:textColor="@color/white"
+        android:textSize="@dimen/smallTextSize"
         app:layout_constraintBottom_toBottomOf="@id/imageThumb"
-        app:layout_constraintStart_toStartOf="@id/imageThumb"
-        app:layout_constraintEnd_toEndOf="@id/imageThumb"/>
+        app:layout_constraintEnd_toEndOf="@id/imageThumb"
+        app:layout_constraintStart_toStartOf="@id/imageThumb" />
+
     <View
         android:id="@+id/strokeBg"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/bg_stroke"
         android:visibility="gone"
-        app:layout_constraintTop_toTopOf="@id/imageThumb"
-        app:layout_constraintStart_toStartOf="@id/imageThumb"
         app:layout_constraintBottom_toBottomOf="@id/imageThumb"
-        app:layout_constraintEnd_toEndOf="@id/imageThumb"/>
+        app:layout_constraintEnd_toEndOf="@id/imageThumb"
+        app:layout_constraintStart_toStartOf="@id/imageThumb"
+        app:layout_constraintTop_toTopOf="@id/imageThumb" />
 </androidx.constraintlayout.widget.ConstraintLayout>

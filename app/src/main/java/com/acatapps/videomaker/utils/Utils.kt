@@ -102,9 +102,9 @@ object Utils {
         ZOOM_IN_CIRCLE
     }
 
-    fun getTransitionByType(transitionType: TransitionType): com.acatapps.videomaker.transition.GSTransition {
+    fun getTransitionByType(transitionType: TransitionType): GSTransition {
         return when (transitionType) {
-            TransitionType.NONE -> com.acatapps.videomaker.transition.GSTransition()
+            TransitionType.NONE -> GSTransition()
             TransitionType.POLKA_DOTS -> com.acatapps.videomaker.transition.GSPolkaDotsTransition()
             TransitionType.WIPE_DOWN -> com.acatapps.videomaker.transition.GSWipeDownTransition()
             TransitionType.ANGULAR -> com.acatapps.videomaker.transition.GSAngularTransition()
@@ -171,7 +171,6 @@ object Utils {
     fun getGSTransitionList(): ArrayList<GSTransition> {
         var number: Int = 0
         val gsTransitionList = ArrayList<GSTransition>()
-
         for (value in TransitionType.values()) {
             if (number > 5) {
                 MainApp.instance
@@ -181,6 +180,23 @@ object Utils {
                     }
             } else {
                 gsTransitionList.add(getTransitionByType(value))
+            }
+            number++
+        }
+        return gsTransitionList
+    }
+    fun getTransitionTypeList(): ArrayList<TransitionType> {
+        var number: Int = 0
+        val gsTransitionList = ArrayList<TransitionType>()
+        for (value in TransitionType.values()) {
+            if (number > 5) {
+                MainApp.instance
+                    .getPreference()?.run {
+                        var itemSet: MutableSet<String> = getListKeyBy() ?: mutableSetOf()
+                        gsTransitionList.add(value.apply {getTransitionByType(value).lock = !itemSet.contains(number.toString())})
+                    }
+            } else {
+                gsTransitionList.add(value)
             }
             number++
         }
@@ -567,6 +583,9 @@ object Utils {
 
     private val TAG = "ShaderHelper"
 
+    /**
+     * 编译着色器
+     */
     fun compileShader(shaderType: Int, shaderSource: String): Int {
         var shaderHandle = GLES20.glCreateShader(shaderType)
 
@@ -591,7 +610,6 @@ object Utils {
 
         return shaderHandle
     }
-
     fun createAndLinkProgram(
         vertexShaderHandle: Int,
         fragmentShaderHandle: Int,
@@ -600,6 +618,7 @@ object Utils {
         var programHandle = GLES20.glCreateProgram()
 
         if (programHandle != 0) {
+            //连接着色器
             GLES20.glAttachShader(programHandle, vertexShaderHandle)
 
             GLES20.glAttachShader(programHandle, fragmentShaderHandle)

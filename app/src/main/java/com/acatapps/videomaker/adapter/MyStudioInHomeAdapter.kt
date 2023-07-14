@@ -15,7 +15,6 @@ import com.bumptech.glide.request.RequestOptions
 import kotlinx.android.synthetic.main.item_my_studio_in_home.view.*
 import java.io.File
 import java.util.*
-import kotlin.collections.ArrayList
 
 
 class MyStudioInHomeAdapter : BaseAdapter<MyStudioDataModel>() {
@@ -40,10 +39,7 @@ class MyStudioInHomeAdapter : BaseAdapter<MyStudioDataModel>() {
             } catch (e: Exception) {
                 File(item.filePath).delete()
                 MainApp.getContext().sendBroadcast(
-                    Intent(
-                        Intent.ACTION_MEDIA_SCANNER_SCAN_FILE,
-                        Uri.fromFile(File(item.filePath))
-                    )
+                    Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE,Uri.fromFile(File(item.filePath)))
                 )
             }
 

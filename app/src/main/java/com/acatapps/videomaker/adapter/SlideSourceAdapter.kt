@@ -1,5 +1,6 @@
 package com.acatapps.videomaker.adapter
 
+import android.util.Log
 import android.view.View
 import com.acatapps.videomaker.R
 import com.acatapps.videomaker.base.BaseAdapter
@@ -11,6 +12,7 @@ import com.bumptech.glide.request.RequestOptions
 import kotlinx.android.synthetic.main.item_image_list_in_slide_show.view.*
 
 class SlideSourceAdapter : BaseAdapter<SlideSourceDataModel>() {
+    private val TAG = "SlideSourceAdapter"
 
     var onClickItem: ((Int) -> Unit)? = null
 
@@ -29,15 +31,10 @@ class SlideSourceAdapter : BaseAdapter<SlideSourceDataModel>() {
             .into(view.imagePreview)
         view.setOnClickListener {
             setOffAll()
-
             item.isSelect = true
             notifyDataSetChanged()
             onClickItem?.invoke(position)
         }
-    }
-
-    private fun setOffAll() {
-        for (item in mItemList) item.isSelect = false
 
     }
 
@@ -45,9 +42,14 @@ class SlideSourceAdapter : BaseAdapter<SlideSourceDataModel>() {
         mItemList.clear()
         notifyDataSetChanged()
         for (item in arrayList) {
-            mItemList.add(SlideSourceDataModel(item))
+            mItemList.add(SlideSourceDataModel(item, getRandomTransition()))
         }
         notifyDataSetChanged()
+    }
+
+    private fun setOffAll() {
+        for (item in mItemList) item.isSelect = false
+
     }
 
     fun changeVideo(position: Int) {
@@ -65,5 +67,14 @@ class SlideSourceAdapter : BaseAdapter<SlideSourceDataModel>() {
             mItemList[position].isSelect = true
             notifyDataSetChanged()
         }
+    }
+
+    /**
+     * 获取随机动画
+     */
+    private fun getRandomTransition(): com.acatapps.videomaker.transition.GSTransition {
+        Log.d(TAG, "ImageSlideShowActivity---getRandomTransition: 获取随机动画")
+        val randomType = Utils.TransitionType.values().random()
+        return Utils.getTransitionByType(randomType)
     }
 }
